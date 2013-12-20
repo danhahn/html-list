@@ -1,0 +1,19 @@
+@bgcolor: #c0c0c0;
+@font-size: 12px;
+@spacing: 5px;
+
+body {
+    background-color: @bgcolor;
+    font: @font-size arial;
+}
+
+table {
+    background-color: #fff;
+    tr {
+        transition: all 1s;
+        &.inactive  {
+            opacity: .2;
+            height: 0;
+        }
+    }
+}
