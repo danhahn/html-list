@@ -2,7 +2,19 @@
   "a": {
     "tag": "a",
     "desc": "Defines a hyperlink",
-    "type": "inline"
+    "type": "inline",
+      "attr" : [
+          {
+              "attr": "href",
+              "value": "URL",
+              "d" : "Specifies the URL of the page the link goes to"
+          },
+          {
+              "attr": "target",
+              "value": "_blank, _parent, _self, _top, framename",
+              "d" : "Specifies where to open the linked document"
+          }
+      ]
   },
   "abbr": {
     "tag": "abbr",

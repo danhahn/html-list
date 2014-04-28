@@ -7,13 +7,39 @@ body {
     font: @font-size arial;
 }
 
-table {
+.table {
     background-color: #fff;
+    .table {
+        margin-bottom: 0;
+    }
     tr {
         transition: all 1s;
         &.inactive  {
             opacity: .2;
             height: 0;
         }
+        &:hover {
+            background-color: lighten(orange, 30%);
+        }
     }
+    tbody tr[class] td:nth-child(1){
+        padding: 0;
+        div{
+            padding: 8px;
+            border-left: 3px solid white;
+            &.attr {
+                border-color: green;
+            }
+        }
+    }
+}
+
+.attr-content {
+    max-height: 1000px;
+    transition: height 1s;
+    overflow: hidden;
+}
+
+.hide-height {
+    height: 0;
 }

@@ -3,13 +3,37 @@ body {
   background-color: #c0c0c0;
   font: 12px arial;
 }
-table {
+.table {
   background-color: #fff;
 }
-table tr {
+.table .table {
+  margin-bottom: 0;
+}
+.table tr {
   transition: all 1s;
 }
-table tr.inactive {
+.table tr.inactive {
   opacity: .2;
+  height: 0;
+}
+.table tr:hover {
+  background-color: #ffdb99;
+}
+.table tbody tr[class] td:nth-child(1) {
+  padding: 0;
+}
+.table tbody tr[class] td:nth-child(1) div {
+  padding: 8px;
+  border-left: 3px solid white;
+}
+.table tbody tr[class] td:nth-child(1) div.attr {
+  border-color: green;
+}
+.attr-content {
+  max-height: 1000px;
+  transition: height 1s;
+  overflow: hidden;
+}
+.hide-height {
   height: 0;
 }
